@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33C8E175D21C513996A91657 /* Pods_UCCompletionTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F13F7EDAF65061DB5ED066 /* Pods_UCCompletionTextField.framework */; };
 		D9045EE01EBC7035004967AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9045EDF1EBC7035004967AC /* AppDelegate.swift */; };
 		D9045EE21EBC7035004967AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9045EE11EBC7035004967AC /* ViewController.swift */; };
 		D9045EE51EBC7035004967AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9045EE31EBC7035004967AC /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27F13F7EDAF65061DB5ED066 /* Pods_UCCompletionTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCCompletionTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB16979B8EFC6AA4EE9DBAEC /* Pods-UCCompletionTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCCompletionTextField.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCCompletionTextField/Pods-UCCompletionTextField.debug.xcconfig"; sourceTree = "<group>"; };
+		D7FA65A70BCDF2FA831146F4 /* Pods-UCCompletionTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCCompletionTextField.release.xcconfig"; path = "Pods/Target Support Files/Pods-UCCompletionTextField/Pods-UCCompletionTextField.release.xcconfig"; sourceTree = "<group>"; };
 		D9045EDC1EBC7035004967AC /* UCCompletionTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCCompletionTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9045EDF1EBC7035004967AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9045EE11EBC7035004967AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33C8E175D21C513996A91657 /* Pods_UCCompletionTextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B6860C28330C996B0F0DFD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27F13F7EDAF65061DB5ED066 /* Pods_UCCompletionTextField.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB3DD2D98B5D71639DA44735 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB16979B8EFC6AA4EE9DBAEC /* Pods-UCCompletionTextField.debug.xcconfig */,
+				D7FA65A70BCDF2FA831146F4 /* Pods-UCCompletionTextField.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D9045ED31EBC7035004967AC = {
 			isa = PBXGroup;
 			children = (
 				D9045EDE1EBC7035004967AC /* UCCompletionTextField */,
 				D9045EDD1EBC7035004967AC /* Products */,
+				AB3DD2D98B5D71639DA44735 /* Pods */,
+				4B6860C28330C996B0F0DFD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9045EEE1EBC7035004967AC /* Build configuration list for PBXNativeTarget "UCCompletionTextField" */;
 			buildPhases = (
+				F229F0213B6D644B57B756F0 /* [CP] Check Pods Manifest.lock */,
 				D9045ED81EBC7035004967AC /* Sources */,
 				D9045ED91EBC7035004967AC /* Frameworks */,
 				D9045EDA1EBC7035004967AC /* Resources */,
+				5CD7253AA7DD6BADC003FC53 /* [CP] Embed Pods Frameworks */,
+				5C13CF319023B85683E8A905 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C13CF319023B85683E8A905 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCCompletionTextField/Pods-UCCompletionTextField-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CD7253AA7DD6BADC003FC53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCCompletionTextField/Pods-UCCompletionTextField-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F229F0213B6D644B57B756F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9045ED81EBC7035004967AC /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		D9045EEF1EBC7035004967AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB16979B8EFC6AA4EE9DBAEC /* Pods-UCCompletionTextField.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U76D6E368Z;
@@ -274,6 +350,7 @@
 		};
 		D9045EF01EBC7035004967AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7FA65A70BCDF2FA831146F4 /* Pods-UCCompletionTextField.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U76D6E368Z;
