@@ -13,6 +13,8 @@
 		D9045EE51EBC7035004967AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9045EE31EBC7035004967AC /* Main.storyboard */; };
 		D9045EE71EBC7035004967AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9045EE61EBC7035004967AC /* Assets.xcassets */; };
 		D9045EEA1EBC7035004967AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9045EE81EBC7035004967AC /* LaunchScreen.storyboard */; };
+		D9045EF31EBC7198004967AC /* UCCompletionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9045EF21EBC7198004967AC /* UCCompletionTextField.swift */; };
+		D9045EF51EBC71E4004967AC /* UCCompletionTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9045EF41EBC71E4004967AC /* UCCompletionTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		D9045EE61EBC7035004967AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9045EE91EBC7035004967AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9045EEB1EBC7035004967AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9045EF21EBC7198004967AC /* UCCompletionTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCCompletionTextField.swift; sourceTree = "<group>"; };
+		D9045EF41EBC71E4004967AC /* UCCompletionTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCCompletionTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +82,22 @@
 		D9045EDE1EBC7035004967AC /* UCCompletionTextField */ = {
 			isa = PBXGroup;
 			children = (
+				D9045EF11EBC716F004967AC /* UCCompletionTextField */,
 				D9045EDF1EBC7035004967AC /* AppDelegate.swift */,
 				D9045EE11EBC7035004967AC /* ViewController.swift */,
 				D9045EE31EBC7035004967AC /* Main.storyboard */,
 				D9045EE61EBC7035004967AC /* Assets.xcassets */,
 				D9045EE81EBC7035004967AC /* LaunchScreen.storyboard */,
 				D9045EEB1EBC7035004967AC /* Info.plist */,
+			);
+			path = UCCompletionTextField;
+			sourceTree = "<group>";
+		};
+		D9045EF11EBC716F004967AC /* UCCompletionTextField */ = {
+			isa = PBXGroup;
+			children = (
+				D9045EF21EBC7198004967AC /* UCCompletionTextField.swift */,
+				D9045EF41EBC71E4004967AC /* UCCompletionTextFieldDelegate.swift */,
 			);
 			path = UCCompletionTextField;
 			sourceTree = "<group>";
@@ -212,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9045EF51EBC71E4004967AC /* UCCompletionTextFieldDelegate.swift in Sources */,
 				D9045EE21EBC7035004967AC /* ViewController.swift in Sources */,
 				D9045EE01EBC7035004967AC /* AppDelegate.swift in Sources */,
+				D9045EF31EBC7198004967AC /* UCCompletionTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +397,7 @@
 				D9045EF01EBC7035004967AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
